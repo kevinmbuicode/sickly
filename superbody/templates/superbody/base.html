@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: #1F2833;
+  color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.container-fluid h2 {
+  color: #4CAF50;
+}
+.container2 h2 {
+  color: #4CAF50;
+}
+.container3 h2 {
+  color: #4CAF50;
+}
+.footer {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+.footer a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+
+</style>
+</head>
+
+<body>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<div class="topnav">
+  <a class="active" href="#home">Health</a>
+  <a href="diet">Diet</a>
+  <a href="contact">Contact</a>
+  <a href="about">About</a>
+</div>
+<div class="gcse-search"></div>
+<script async src="https://cse.google.com/cse.js?cx=5885536f8d0491501"></script>
+
+{% block body %}
+<div class="container-fluid">
+  <div style="padding-left:16px">
+    <h2>Quick Check</h2>
+    <p>Hi, welcome to home-clinic. You probably a health-cautious fellow and want a constant check on your health, but probably you can't afford it. So we are here to help you do that; powered by the best sites in the world. Just simply type your symptoms on the search bar and wallaa! You get the best results in a second. We as well recommend seeing a doctor if the condition is serious.<b>CONNECT TO THE INTERNET TO GENERATE THE SEARCH BAR, AND REFRESH!!!</b></p>
+  </div>
+</div>
+
+<div class="container2">
+  <div style="padding-left:16px">
+    <h2>What we Do</h2>
+    <p>We are the version of clinic where you get diagonised for symptoms you typed in the search bar and tell you the medicine you may require and the precations you may have to take. Our search engine runs on specific sites trusted by proficient doctors and nurses all over the world. We however don't recommend this for serious cases as a physical doctor may have to run bloodtests, temperature and other prediagnosis to affirm a source of your problem. We will be glad to serve you.
+  </div>
+</div>
+
+<div class="container3">
+  <div style="padding-left:16px">
+    <h2>Platforms we use</h2>
+    <p>For the accurate results, we have deployed the best platforms for health checking on this platform. These platforms are:</p>
+    <ul>
+      <li><b>American Cancer Society</b><br/></li><p>Fighting cancer with research, education, patient care, and rehabilitation.</p>
+      <li><b>Drugs.com</b><br/></li><p>Easy-to-read drug information and useful online tools including a pill identifier.</p>
+      <li><b>Healthline</b><br/></li><p>Condition and procedure topics, symptom checker, and pill identifier.</p>
+      <li><b>Mayo Clinic</b><br/></li><p>Award-winning medical and health information for healthy living.</p>
+      <li><b>Medline PLus</b><br/><p>Diseases, symptoms, injuries, and more with photographs and illustrations.</p></li>
+      <li><b>Medscape</b><br/></li><p>Medical information for specialists, physicians, and industry professionals.</p>
+    </ul>
+</div>
+{% endblock %}
+<div class="footer">
+    <a href="diet">Diet</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+  </p>
+</div>
+</body>
+</html>

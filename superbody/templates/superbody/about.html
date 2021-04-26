@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We share ideas on home-based care about your health. This is for people who can't afford to go for a check as regulary as possible. The search engine is specified to seach from the best medical websites aroundd the world, trusted by doctors,nurses and governments as well. We however, don't take any responsibilty for any detoriations occured to self.</p>
+  <p>This is a alpha version(for testing), and it may contain bugs that may cause the app to crush. For such feedback or positive feedback, send an to email or contact +254771640470.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kevin Mbui</h2>
+        <p class="title">Back-end Developer</p>
+        <p>This application has been developed using Python and Django framework. For queries send an email to developer.</p>
+        <p>kevinmushan@gmail.com</p>
+        <p><button class="button"><a href="https://wa.link/q6f9cf">Contact via Whatsapp</a></button></p>
+        <p><button class="button"><a href="mailto:kevinmushan@gmail.com">Contact via Email</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kevin Mbui</h2>
+        <p class="title">Front-end Developer</p>
+        <p>The front end styling has been developed using HTML,CSS,Javascript and google specific code. Unfortunately, the whole styling hasn't been finished as this was as a test and feedback on importance and need for this app in the market comes from you. Please make sure to share feedback. Note:patent has been acquired for the next years.</p>
+        <p>kevinmushan@gmail.com</p>
+        <p><button class="button"><a href="https://wa.link/q6f9cf">Contact via Whatsapp</a></button></p>
+        <p><button class="button"><a href="mailto:kevinmushan@gmail.com">Contact via Email</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Kevin Mbui</h2>
+        <p class="title">Database Developer</p>
+        <p>For security reasons i can't share what the database is made of, but your data won't and can't be used or shared to third parties</p>
+        <p>kevinmushan@gmail.com</p>
+        <p><button class="button"><a href="https://wa.link/q6f9cf">Contact via Whatsapp</a></button></p>
+        <p><button class="button"><a href="mailto:kevinmushan@gmail.com">Contact via Email</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
